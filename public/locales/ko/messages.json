@@ -1,0 +1,135 @@
+{
+  "common": {
+    "hello": "안녕하세요!"
+  },
+  "contact": {
+    "email": "your@email.com",
+    "phone": "010-0000-0000",
+    "github": "https://github.com/your"
+  },
+
+  "introduce": {
+    "title": "소개",
+    "description": "데이터 기반 제품을 만들고 문제 해결을 즐기는 엔지니어입니다."
+  },
+
+  "project": {
+    "title": "프로젝트",
+    "items": [
+      {
+        "id": "reflow",
+        "name": "reflow",
+        "short": "데이터 보는 문화를 쉽게 만들어주는 서비스",
+        "period": "2023.07 - 2023.12",
+        "details": "여기에 모달에 들어갈 상세 내용을 적습니다.",
+        "bullets": [
+          "Google DORA 기반 팀 생산성 진단",
+          "데이터 소스 연결 및 BI 시각화"
+        ]
+      }
+    ]
+  },
+
+  "workExperience": {
+    "title": "Work Experience",
+    "items": [
+      {
+        "company": "reflow",
+        "period": "2023.07 - 2023.12",
+        "summary": "데이터 보는 문화를 쉽고 빠르게 만들어주는 서비스",
+        "roles": [
+          {
+            "title": "CEO",
+            "team": "reflow dev",
+            "bullets": [
+              "Google의 DORA 연구를 기반으로 개발팀 생산성 진단 및 개선 코칭",
+              "진행중"
+            ]
+          },
+          {
+            "title": "CEO",
+            "team": "reflow",
+            "description": "BigQuery/PostgreSQL 등의 데이터 소스를 연동...",
+            "bullets": [
+              "제품 기획 및 디자인, 개발",
+              "고객 인터뷰 및 세일즈 미팅 진행"
+            ]
+          }
+        ]
+      },
+
+      {
+        "company": "힐링페이퍼",
+        "period": "2021.11 - 2023.07",
+        "summary": "300만 유저, 2000여 병원과 함께하는 1등 성형정보앱 강남언니",
+        "roles": [
+          {
+            "title": "Backend Engineer",
+            "bullets": [
+              "시간당 170만 건의 로그 처리 시스템 개발",
+              "CQRS/ES 기반 포인트 시스템 개발",
+              "TDD 기반 안정성 향상"
+            ]
+          },
+          {
+            "title": "Ad Domain PO",
+            "period": "2021.06 - 2021.11",
+            "bullets": [
+              "앱 내 광고 효율을 위한 이벤트 수집 시스템 구축",
+              "리스크 모델 기반 월 손실 1.2억 → 손실 방지",
+              "광고 개인화 시스템 구축·개선(효율 212%↑)"
+            ]
+          },
+          {
+            "title": "Data Team Lead",
+            "period": "2020.11 - 2021.05",
+            "bullets": [
+              "전사 지표 설계 및 데이터 기반 문화 확산",
+              "데이터 엔지니어링 및 애널리틱스 팀 리딩"
+            ]
+          },
+          {
+            "title": "Frontend Lead",
+            "period": "2020.05 - 2020.11",
+            "bullets": [
+              "생산성 기반 아키텍처 설계 및 리팩토링",
+              "디자인 시스템 개선",
+              "웹뷰 및 CI/CD 자동화"
+            ]
+          }
+        ]
+      },
+
+      {
+        "company": "코드스테이츠",
+        "period": "2020.03 - 2020.05",
+        "roles": [
+          {
+            "title": "(Freelancer) Growth Lead",
+            "bullets": [
+              "마케팅부터 결제 데이터 분석까지 퍼널 기반 개선",
+              "랜딩페이지 기획 및 개발",
+              "결제 전환율 250% 개선"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+
+  "skill": {
+    "title": "Skills",
+    "items": ["React", "Next.js", "TypeScript", "Node.js", "SQL", "AWS"]
+  },
+
+  "education": {
+    "title": "Education",
+    "items": [
+      {
+        "school": "SKKU",
+        "degree": "Computer Science",
+        "period": "2018 - 2024"
+      }
+    ]
+  }
+}
