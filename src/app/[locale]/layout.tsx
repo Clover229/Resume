@@ -4,27 +4,21 @@ import SectionNav from "./_components/SectionNav";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
 import "@/src/app/globals.css";
-
-const locales = ["en", "ko"];
+import { getMessages } from "next-intl/server";
+import { routing } from "@/src/i18n/routing";
 
 export default async function ResumeLayout({
   children,
   params,
 }: {
   children: React.ReactNode;
-  params: Promise<{ locale: string }>;
+  params: Promise<{ locale: "en" | "ko" }>;
 }) {
   const { locale } = await params;
-  if (!locales.includes(locale)) {
+  if (!routing.locales.includes(locale)) {
     notFound();
   }
-  let messages;
-  try {
-    messages = (await import(`../../../public/locales/${locale}/messages.json`))
-      .default;
-  } catch (e) {
-    notFound();
-  }
+  const messages = await getMessages();
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>
       <div className="relative flex flex-col items-center">

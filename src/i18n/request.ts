@@ -1,9 +1,10 @@
 import { getRequestConfig } from "next-intl/server";
+import { routing } from "./routing";
 
 export default getRequestConfig(async ({ requestLocale }) => {
-  const locale = (await requestLocale) || "ko";
-  if (!locale) {
-    throw new Error("Locale must be defined");
+  let locale = (await requestLocale) as "en" | "ko";
+  if (!locale || !routing.locales.includes(locale)) {
+    locale = routing.defaultLocale;
   }
 
   const messages = (
