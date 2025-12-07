@@ -4,7 +4,6 @@ import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
 import "@/src/app/globals.css";
 import { getMessages } from "next-intl/server";
-import { routing } from "@/src/i18n/routing";
 
 export default async function ResumeLayout({
   children,
@@ -14,7 +13,7 @@ export default async function ResumeLayout({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  if (!routing.locales.includes(locale as "en" | "ko")) {
+  if (locale !== "en" && locale !== "ko") {
     notFound();
   }
   const messages = await getMessages();
