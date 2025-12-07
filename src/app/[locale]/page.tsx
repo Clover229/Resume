@@ -3,7 +3,7 @@ import Introduce from "./_components/Contents/Introduce";
 export default async function ResumePage({
   params,
 }: {
-  params: Promise<{ locale: string }>;
+  params: Promise<{ locale: "en" | "ko" }>;
 }) {
   return (
     <div>

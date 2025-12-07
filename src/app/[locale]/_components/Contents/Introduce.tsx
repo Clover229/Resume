@@ -5,7 +5,7 @@ import Link from "next/link";
 export default async function Introduce({
   params,
 }: {
-  params: Promise<{ locale: string }>;
+  params: Promise<{ locale: "en" | "ko" }>;
 }) {
   const { locale } = await params;
   const t = await getTranslations({ locale });
