@@ -1,6 +1,5 @@
 import Header from "./_components/Header";
 import Footer from "./_components/Footer";
-import SectionNav from "./_components/SectionNav";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
 import "@/src/app/globals.css";

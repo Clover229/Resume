@@ -1,13 +1,4 @@
 {
-  "common": {
-    "hello": "안녕하세요!"
-  },
-  "contact": {
-    "email": "your@email.com",
-    "phone": "010-0000-0000",
-    "github": "https://github.com/your"
-  },
-
   "introduce": {
     "title": "소개",
     "h1-1": "안녕하세요,",

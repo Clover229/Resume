@@ -1,4 +1,3 @@
-import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import Link from "next/link";
@@ -38,7 +37,7 @@ export default async function Introduce({
 
         <div className="md:flex md:justify-around space-y-8 mt-8">
           <Image
-            src="/image/profile.jpg"
+            src="/image/profile2.PNG"
             alt="Profile Picture"
             width={200}
             height={200}
