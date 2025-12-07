@@ -27,9 +27,6 @@ export default async function ResumeLayout({
         {/* 본문 */}
         <main className="w-full max-w-3xl px-6 pt-24">{children}</main>
 
-        {/* 오른쪽 목차 */}
-        <SectionNav />
-
         <Footer />
       </div>
     </NextIntlClientProvider>

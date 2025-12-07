@@ -4,7 +4,6 @@ const sections = [
   { id: "contact", label: "Contact" },
   { id: "introduce", label: "Introduce" },
   { id: "projects", label: "Projects" },
-  { id: "work", label: "Work Experience" },
   { id: "skills", label: "Skills" },
   { id: "education", label: "Education" },
 ];
@@ -15,11 +14,11 @@ export default function SectionNav() {
   };
 
   return (
-    <nav className="fixed right-6 top-24 flex flex-col gap-3 text-sm p-3 bg-white shadow rounded">
+    <nav className="flex gap-1 md:gap-5 text-xs md:text-sm p-3 bg-white rounded">
       {sections.map((s) => (
         <button
           key={s.id}
-          className="hover:underline text-left"
+          className="hover:cursor-pointer text-left font-bold"
           onClick={() => scrollToSection(s.id)}
         >
           {s.label}

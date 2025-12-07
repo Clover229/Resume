@@ -11,7 +11,7 @@ export default async function Introduce({
   const { locale } = await params;
   const t = await getTranslations({ locale });
   return (
-    <div className="max-w-4xl mx-auto p-6 md:p-10">
+    <div id="introduce" className="max-w-4xl mx-auto p-6 md:p-10">
       <div className="gap-10">
         <div className="md:col-span-2 space-y-12">
           <header className="space-y-2">
@@ -45,7 +45,7 @@ export default async function Introduce({
             //className="rounded-full"
           />
 
-          <div className="p-6 space-y-4">
+          <div id="contact" className="p-6 space-y-4">
             <div>
               <h3 className="text-xl font-bold mb-1 text-[#A4CBA4]">Contact</h3>
               <a
