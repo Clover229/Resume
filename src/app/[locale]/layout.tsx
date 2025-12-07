@@ -11,10 +11,10 @@ export default async function ResumeLayout({
   params,
 }: {
   children: React.ReactNode;
-  params: Promise<{ locale: "en" | "ko" }>;
+  params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  if (!routing.locales.includes(locale)) {
+  if (!routing.locales.includes(locale as "en" | "ko")) {
     notFound();
   }
   const messages = await getMessages();
