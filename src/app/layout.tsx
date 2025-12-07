@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "안녕하세요, 전수민입니다!",
   description: "전수민의 이력서입니다.",
+  icons: {
+    icon: "/image/favicon.ico",
+  },
 };
 
 export default function RootLayout({

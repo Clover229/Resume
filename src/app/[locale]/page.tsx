@@ -1,11 +1,13 @@
 import { getTranslations } from "next-intl/server"; //각 컴포넌트에서
+import Introduce from "./_components/Contents/Introduce";
 
 export default async function ResumePage({
-  params: { locale },
+  params,
 }: {
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }) {
+  const { locale } = await params;
   const t = await getTranslations({ locale });
 
-  return <p>{t("common.hello")}</p>;
+  return <Introduce params={params} />;
 }

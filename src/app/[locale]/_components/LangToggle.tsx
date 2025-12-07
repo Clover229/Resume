@@ -2,6 +2,15 @@
 
 import { useLocale } from "next-intl";
 import { usePathname, useRouter } from "next/navigation";
+import {
+  Select,
+  SelectContent,
+  SelectGroup,
+  SelectItem,
+  SelectLabel,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 export default function LangToggle() {
   const locale = useLocale(); // 현재 언어 (ko / en)
@@ -18,8 +27,17 @@ export default function LangToggle() {
   };
 
   return (
-    <button onClick={toggleLang} className="border rounded px-3 py-1 text-sm">
-      {locale === "ko" ? "🇰🇷 한국어" : "🇺🇸 English"}
-    </button>
+    <Select onValueChange={toggleLang} defaultValue={locale}>
+      <SelectTrigger className="w-[100px]">
+        <SelectValue />
+      </SelectTrigger>
+      <SelectContent>
+        <SelectGroup>
+          <SelectLabel>Language</SelectLabel>
+          <SelectItem value="ko">한국어</SelectItem>
+          <SelectItem value="en">English</SelectItem>
+        </SelectGroup>
+      </SelectContent>
+    </Select>
   );
 }

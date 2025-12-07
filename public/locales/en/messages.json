@@ -1,6 +1,6 @@
 {
   "common": {
-    "hello": "Hello!"
+    "hello": "안녕하세요!"
   },
   "contact": {
     "email": "your@email.com",
@@ -10,7 +10,15 @@
 
   "introduce": {
     "title": "소개",
-    "description": "데이터 기반 제품을 만들고 문제 해결을 즐기는 엔지니어입니다."
+    "h1-1": "Hello,",
+    "h1-2": "I am Sumin Jeon, a developer who identifies and fulfills the needs of the user.",
+    "h2-1": "Experienced in resolving user inconvenience through feedback implementation.",
+    "h3-1": "After developing a platform for an in-school algorithm competition, I received feedback that the original leaderboard was not utilized effectively. Following the competition, I developed and integrated a real-time, individualized leaderboard to specifically address the participants' needs.",
+    "h2-2": "Successfully implemented Sentry to enable rapid response for the Frontend team.",
+    "h3-2": "As a Frontend Team Leader, I strived to alleviate the pain points experienced by team members. Recognizing that user inconvenience was directly linked to service quality, it was crucial to quickly identify errors. My implementation helped the team swiftly detect critical issues and minimized confusion regarding role distribution during sudden errors.",
+    "contact": "jeonsumin2002@gmail.com",
+    "blog": "https://velog.io/@clover229/posts",
+    "github": "https://github.com/Clover229"
   },
 
   "project": {
